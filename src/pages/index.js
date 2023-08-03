@@ -1,15 +1,13 @@
 import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
-
-const pageTitle = 'Welcome to my Gatsby site!'
-const pageSubtitle = "— I'm making this by following the Gatsby Tutorial"
+import Seo from '../components/seo'
 
 const IndexPage = () => {
 	return (
 		<Layout
-			pageTitle={pageTitle}
-			pageSubtitle={pageSubtitle}
+			pageTitle='Welcome to my Gatsby site!'
+			pageSubtitle="— I'm making this by following the Gatsby Tutorial"
 		>
 			<p>I'm making this by following the Gatsby Tutorial.</p>
 			<StaticImage
@@ -20,14 +18,6 @@ const IndexPage = () => {
 	)
 }
 
-export const Head = () => (
-	<>
-		<title>Home Page</title>
-		<meta
-			name='description'
-			content='Home Page for my Gatsby site. I am a software engineer and a pianist.'
-		/>
-	</>
-)
+export const Head = () => <Seo title='Home Page' />
 
 export default IndexPage
