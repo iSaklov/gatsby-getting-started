@@ -3,12 +3,17 @@ import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
+import Button from '../../components/button'
 
 const BlogPost = ({ data, children }) => {
 	const image = getImage(data.mdx.frontmatter.hero_image)
 
 	return (
 		<Layout pageTitle={data.mdx.frontmatter.title}>
+			<Button
+				text='← back to posts'
+				linkTo='/blog'
+			/>
 			<p>Posted: {data.mdx.frontmatter.date}</p>
 			<GatsbyImage
 				image={image}

@@ -1,0 +1,13 @@
+.icon {
+	width: 2rem;
+	height: 2rem;
+	opacity: 0.75;
+	transition: all 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+	.icon:hover {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+}
