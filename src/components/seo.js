@@ -23,6 +23,10 @@ const Seo = ({ title }) => {
         name="description"
         content={`${title} | ${data.site.siteMetadata.description}`}
       />
+      <meta
+        name="google-site-verification"
+        content="pQjTK4Lj92piEbKgjCemdCqaML-vQtQzIn3Tsn_xf7Y"
+      />
     </>
   )
 }

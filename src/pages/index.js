@@ -20,6 +20,9 @@ const IndexPage = () => {
       <StaticImage
         src="../images/sam-fry-eK60EsFSEmM-unsplash.jpg"
         alt="woman in gray jacket and purple pants standing next to graffiti wall"
+        width={640}
+        height={832}
+        loading="eager"
       />
       <p>
         Photo Credit:{" "}
